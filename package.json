@@ -1,9 +1,9 @@
 {
-  "name": "taro-uilib-react",
+  "name": "tarocomponents",
   "version": "0.0.1",
   "browser": "dist/index.umd.js",
   "module": "dist/index.esm.js",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "source": "src/index.ts",
   "description": "Taro UI 库 React 版本范例",
   "types": "types/index.d.ts",
@@ -36,7 +36,7 @@
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^8.0.1",
-    "@tarojs/components": "^3.0.8",
+    "@tarojs/components": "3.6.25",
     "@tarojs/react": "^3.0.8",
     "@tarojs/taro": "^3.0.8",
     "@types/node": "^14.0.13",
@@ -60,10 +60,18 @@
     "stylelint-config-standard": "20.0.0",
     "stylelint-scss": "3.17.2",
     "ts-jest": "26",
-    "typescript": "^3.9.5"
+    "typescript": "latest"
   },
   "peerDependencies": {
-    "@tarojs/components": "^3.0.8",
+    "@tarojs/components": "3.6.25",
+    "@tarojs/react": "^3.0.8",
+    "react": ">=16.13.0",
+    "react-dom": ">=16.13.0"
+  },
+  "dependencies": {
+    "@tarojs/plugin-platform-weapp": "^4.0.6",
+    "tslib": "^2.7.0",
+    "@tarojs/components": "3.6.25",
     "@tarojs/react": "^3.0.8",
     "react": ">=16.13.0",
     "react-dom": ">=16.13.0"
